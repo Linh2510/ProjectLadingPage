@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   font-family: 'Karla',sans-serif;
+   color: black;
+   background-color:white; 
+   font-size: 20px;
+   text-rendering: optimizeLegibility;
+   /* //hienthichu */
+}
+body{
+    overflow-x: hidden;
+}
+/* --------sudunglai ------*/
+.btn{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    background-color: #e63e22;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 1.5px;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+}
+.heading-main-box a:hover{
+    background-color:#d35400;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h2{
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700px;
+      color: #e63e22;
+      text-align: center;
+      
+     
+  }
+  h2::after {
+      content: " ";
+      display: block;
+      background-color:#e63e22;
+      height: 3px;
+      width: 150px;
+      margin: 0 auto;
+      margin-top: 5px;
+  }
+/* -----HEADER------ */
+.logo img{
+    width: 300px;
+    float: left;
+    margin-top:-50px;
+    margin-left: 70px;
+}
+
+header{
+
+    background-image:linear-gradient(to right top, rgba(2, 33, 64,0.8) 50%,rgba(45, 95, 93,0.9)),url("../img/background4.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+ 
+}
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+.menu_nav {
+   float: right;
+    list-style: none;
+    margin-top: 35px;
+    margin-right: 40px;
+
+}
+.menu_nav li{
+    display: inline-block;
+    margin: 10px;
+}
+.menu_nav li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size: 110%;
+    transition: border-bottom 0.5s;
+
+}
+.menu_nav li a:hover, .menu_nav li a:active{
+    padding-bottom: 1px 0px;
+    border-bottom: 3px solid blanchedalmond;
+
+}
+.heading-main-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-45%,-55%);
+    width: 1140px;
+}
+.heading-main-box h1{
+    text-transform: uppercase;;
+    font-size: 300%;
+    font-weight: 400;
+    color: white ;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 120%;
+}
+/* ----------aboutsection--------- */
+.p-long{
+    text-align: center;
+}
+.about-picture img{
+    width: 100%;
+    border: 2px solid #c2e1fd;
+    border-radius: 15px;
+    box-shadow: 5px 8px 8px gray;
+  
+}
+section{
+    padding: 50px;
+}
+.about-picture{
+    position: relative;
+}
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #c2e1fd;
+    transform: translate(-65%,100%);
+    opacity: 0;
+  
+}
+.about-picture:hover .picture-title, .about-picture:active .picture-title{
+   
+    transform:translate(-65%, -50%) ;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.about-picture:hover img, .about-picture:active img{
+     filter:  brightness(50%) blur(2px);
+     transition: all 0.5s;
+}
+.product{
+    background-color: #f4f4f4;
+}
+.product-box{
+    background-color: rgb(207, 219, 243);
+    width: 90%;
+    height: 350px;
+    box-shadow: 3px 5px 10px #e0e0e0;
+}
+.product h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    background-color: #265077;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.list{
+    margin-top: 40px;
+}
+.product-price{
+    color: #265077;
+    font-weight: 300;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 20px;
+}
+.product-price span{
+    font-size: 80%;
+}
+.product-box .btn{
+    margin-left: 25%;
+}
+.small-icon {
+    color: #265077;
+    font-size: 130%;
+}
+.product ul li {
+    list-style: none;
+    padding-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+    /* TESTIANOMAL */
+.testimonial-section{
+    background-image:linear-gradient(to right top, rgba(2, 33, 64,0.8) 50%,rgba(45, 95, 93,0.9)), url("../img/background2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;}
+ .testimonial-section h2{
+        margin-bottom: 50px;
+    }
+    blockquote {
+        width: 90%;
+        position: relative;
+        font-size: 130%;
+        font-style: italic;
+        color: white;
+        line-height: 130%;
+        
+    }
+    blockquote::before{
+        content:"\201C";
+        font-size: 300%;
+        position: absolute;
+        top:-10%;
+        left: -10%;
+    }
+    cite{
+        margin-top: 30px;
+        display: block;
+        color: aquamarine;
+    }
+cite img{
+
+    margin-right: 10px;
+    height: 70px;
+    vertical-align: middle;
+    border: 2px solid #265077;
+    border-radius: 60%;
+}
+/* Sponserssestion */
+.sponsors-section{
+     background-color: #f4f4f4;
+}
+.sponsors-section h2{
+    margin-bottom: 50px;
+}
+.sponsors-showcase{
+  margin-left: 10%;
+ 
+}
+.sponsors-showcase li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+   margin-bottom: 20px;
+   
+}
+.logosponsors{
+    width: 140px;
+    transition: all,2s;
+}
+figcaption{
+    color: #265077;
+    font-weight: 900;
+    font-size: 130%;
+    cursor: pointer;
+}
+.sponsors-showcase li .logosponsors:hover,.sponsors-showcase li .logosponsors:active {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+/* ------contactform----- */
+.contact-section{
+   background-image:linear-gradient(to right top, rgba(2, 33, 64,0.8) 50%,rgba(45, 95, 93,0.9)), url("../img/sach1.jpg");
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   
+}
+.contact-section .information{
+    margin-top: 30%;
+    line-height: 200%;
+}
+.contact-section .information li{
+    list-style: none;
+    color: white;
+    margin-bottom: 10px;
+}
+.contact-section .information i{
+    color:rgb(61, 122, 214);
+    padding-right: 20px;
+    
+}
+.contact-section .icon li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 150%;
+    transition: all,2s;
+}
+.contact-section .icon li:hover{
+    transform: scale(1.2,1.2);
+    color: #d35400;
+    cursor: pointer;
+}
+.contact-section form{
+    margin-left: 30%;
+    width: 60%;
+    height: 60%;
+    background-color: rgba(108, 116, 116,0.5);
+    color: white;
+    padding: 5%;
+    /* padding: 50px; */
+    
+}
+
+.contact-section form input,textarea{
+    padding: 5px;
+    margin-left: -30%;
+    background-color: rgba(108, 116, 116,0.5);
+    border: 1px solid #265077;
+    outline: none;
+}
+ .contact-section form button{
+    margin-left: 15%;
+    /* padding: 5px 20px; */
+} 
+
+/* -------footer--------- */
+/* ------------------------ */
+footer{
+    
+    padding: 20px;
+    color: white;
+    background-color: #242629;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 16px;
+    }
+  }
